@@ -163,8 +163,6 @@ window.check = function(){
     xp += 10;
     combo++;
 
-    beep(200);
-
     document
       .getElementById("result")
       .textContent =
@@ -179,9 +177,7 @@ window.check = function(){
     lives--;
     combo = 0;
 
-    beep(80);
-
-    document
+   document
       .getElementById("result")
       .textContent =
         "Wrong 😭";
