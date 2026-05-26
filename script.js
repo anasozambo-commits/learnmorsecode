@@ -77,68 +77,6 @@ window.morseToText = function(){
     .textContent = result;
 };
 
-// ---------------- SOUND ----------------
-
-function beep(ms){
-
-  try {
-
-    const ctx =
-      new (window.AudioContext ||
-      window.webkitAudioContext)();
-
-    const osc =
-      ctx.createOscillator();
-
-    osc.frequency.value = 800;
-
-    osc.connect(ctx.destination);
-
-    osc.start();
-
-    setTimeout(() => {
-
-      osc.stop();
-      ctx.close();
-
-    }, ms);
-
-  } catch(err) {
-
-    console.log(err);
-  }
-}
-
-window.playMorse = async function(){
-
-  const text =
-    document.getElementById("output")
-    .textContent;
-
-  for(let s of text){
-
-    if(s === "."){
-
-      beep(100);
-
-      await wait(200);
-    }
-
-    else if(s === "-"){
-
-      beep(300);
-
-      await wait(400);
-    }
-  }
-};
-
-function wait(ms){
-
-  return new Promise(r =>
-    setTimeout(r, ms));
-}
-
 // ---------------- ALPHABET ----------------
 
 const list =
