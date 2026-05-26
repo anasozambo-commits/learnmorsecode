@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(135deg,#0f0c29,#302b63,#ff00aa);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 0 0 20px cyan;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: cyan;
+  font-weight: bold;
+}
+
+textarea, input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.bar {
+  width: 200px;
+  height: 10px;
+  background: rgba(255,255,255,0.3);
+  margin: auto;
+  border-radius: 10px;
+}
+
+#barFill {
+  height: 100%;
+  width: 0%;
+  background: lime;
+  border-radius: 10px;
+}
