@@ -1,8 +1,8 @@
 body {
-  font-family: Arial;
+  font-family: Hipster;
   text-align: center;
-  background: linear-gradient(135deg,#0f0c29,#302b63,#ff00aa);
-  color: white;
+  background: linear-gradient(135deg,#C29EFF,#9EB1FF,#9EE7FF);
+  color: black;
   min-height: 100vh;
   padding: 20px;
 }
@@ -18,7 +18,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background: cyan;
+  background: #9EB1FF;
   font-weight: bold;
 }
 
@@ -42,6 +42,6 @@ textarea, input {
 #barFill {
   height: 100%;
   width: 0%;
-  background: lime;
+  background: #C29EFF;
   border-radius: 10px;
 }
